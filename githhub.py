@@ -1,10 +1,12 @@
-class student:
-  def __init__(self,name,rollno):
-    self.name=name
-    self.rollno=rollno
-  def display(self):
-    print(f"My name is self.name and rollno is self.rollno")
-name=input("Enter your name: ")
-rollno=int(input("Enter your rollno: ")
-s=student(name,rollno)
-s.display()
+class STUDENT:
+    def __init__(self, name='Ran', roll=57):
+        self.name = name
+        self.roll = roll
+
+    def display(self):
+        print("Hello I am Sri")
+        return f"My name is {self.name} and roll number is {self.roll}"
+
+
+s = STUDENT()
+print(s.display())
